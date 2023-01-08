@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_sakura.mk
+    $(LOCAL_DIR)/banana_sakura.mk
+
+COMMON_LUNCH_CHOICES := \
+    banana_sakura-eng \
+    banana_sakura-user \
+    banana_sakura-userdebug
