@@ -15,5 +15,9 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     fstab.qcom
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/sakura/sakura-vendor.mk)
