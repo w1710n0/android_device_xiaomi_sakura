@@ -15,6 +15,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_BOOTANIMATION_HALF_RES := true
 BANANA_MAINTAINER := w1710n0
 TARGET_SUPPORTS_QUICK_TAP := true
+WITH_GAPPS := true
 
 # Inherit from sakura device
 $(call inherit-product, device/xiaomi/sakura/device.mk)
