@@ -13,6 +13,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 $(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
 TARGET_USE_SINGLE_BOOTANIMATION := true
 TARGET_PICK_BOOTANIMATION := "6"
+WITH_GAPPS := true
+TARGET_BOOTLEG_ARCH := arm64
 
 # Maintainer Prop
 PRODUCT_PROPERTY_OVERRIDES += \
