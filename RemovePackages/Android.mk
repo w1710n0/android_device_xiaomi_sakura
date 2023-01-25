@@ -7,8 +7,6 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
     AmbientSensePrebuilt \
     AppDirectedSMSService \
-    Chrome \
-    Chrome-Stub \
     ConnMO \
     Drive \
     DCMO \
@@ -29,6 +27,7 @@ LOCAL_OVERRIDES_PACKAGES := \
     Ornament \
     Papers \
     PrebuiltGmail \
+    PixelLiveWallpaperPrebuilt \
     PixelWallpapers2021 \
     PixelWallpapers2020 \
     RecorderPrebuilt \
