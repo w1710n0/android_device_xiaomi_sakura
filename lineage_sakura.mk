@@ -9,8 +9,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common LineageOS stuff.
+# Inherit some common riceDroisOSS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+TARGET_SUPPORTS_QUICK_TAP := true
+RICE_CHIPSET := Snapdragon 625
+
+# riceDroid Stuff with GApps
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+SUSHI_BOOTANIMATION  := 1080
+TARGET_ENABLE_BLUR := true
+WITH_GMS := true
+
+# Maintainer Stuff
+RICE_MAINTAINER := w1710n0
+RICE_OFFICIAL := false
 
 # Inherit from sakura device
 $(call inherit-product, device/xiaomi/sakura/device.mk)
