@@ -7,8 +7,6 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
     AmbientSensePrebuilt \
     AppDirectedSMSService \
-    Chrome \
-    Chrome-Stub \
     ConnMO \
     Drive \
     DCMO \
