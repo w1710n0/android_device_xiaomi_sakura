@@ -15,5 +15,9 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     fstab.qcom
 
+# Qualcomm
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_BOARD_PLATFORM := msm8953
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/sakura/sakura-vendor.mk)
