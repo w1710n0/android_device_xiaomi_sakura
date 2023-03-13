@@ -13,12 +13,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_SUPPORTS_QUICK_TAP := true
 RICE_CHIPSET := Snapdragon®625
-RICE_PACKAGE_TYPE := "VANILLA AOSP"
 
 # Bootanimation
 SUSHI_BOOTANIMATION  := 1080
 TARGET_ENABLE_BLUR := true
-
 
 # Maintainer Stuff
 RICE_MAINTAINER := w1710n0
