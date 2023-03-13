@@ -19,5 +19,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     RemovePackages
 
+# Qualcomm
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_BOARD_PLATFORM := msm8953
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/sakura/sakura-vendor.mk)
