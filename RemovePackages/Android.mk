@@ -28,8 +28,6 @@ LOCAL_OVERRIDES_PACKAGES := \
     Papers \
     PrebuiltGmail \
     PixelLiveWallpaperPrebuilt \
-    PixelWallpapers2021 \
-    PixelWallpapers2020 \
     RecorderPrebuilt \
     SafetyHubPrebuilt \
     SCONE \
