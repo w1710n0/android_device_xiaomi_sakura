@@ -10,7 +10,7 @@ include device/xiaomi/sakura-common/BoardConfigCommon.mk
 DEVICE_PATH := device/xiaomi/sakura
 
 # Kernel
-TARGET_KERNEL_CONFIG := sakura_defconfig
+TARGET_KERNEL_CONFIG := daisy_defconfig
 
 # Partitions
 BOARD_CACHEIMAGE_PARTITION_SIZE := 268435456
