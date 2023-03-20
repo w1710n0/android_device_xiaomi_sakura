@@ -9,7 +9,14 @@ $(call inherit-product, device/xiaomi/sakura-common/sakura.mk)
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    hardware/qcom-caf/msm8996
+
+# Dex preopt
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    NexusLauncherRelease \
+    SettingsGoogle \
+    SystemUI
 
 # Ramdisk
 PRODUCT_PACKAGES += \
