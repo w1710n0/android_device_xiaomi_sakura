@@ -9,13 +9,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common PixelExperience stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_INCLUDE_STOCK_ARCORE := false
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-TARGET_SUPPORTS_QUICK_TAP := true
+# Inherit some common CherishOS stuff.
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+
+# CherishOS Stuff
 TARGET_FACE_UNLOCK_SUPPORTED := false
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# CherishOS Stuff with GApps
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+WITH_GMS := true
 
 # Inherit from sakura device
 $(call inherit-product, device/xiaomi/sakura/device.mk)
@@ -36,3 +40,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := "xiaomi/sakura/sakura:9/PKQ1.180917.001/V12.0.1.0.PDICNXM:user/release-keys"
+
+# Maintainer Stuff
+CHERISH_BUILD_TYPE := UNOFFICIAL
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.cherish.maintainer=w1710n0

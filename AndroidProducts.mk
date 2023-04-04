@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_sakura.mk
+    $(LOCAL_DIR)/cherish_sakura.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_sakura-user \
-    aosp_sakura-userdebug \
-    aosp_sakura-eng
+    cherish_sakura-user \
+    cherish_sakura-userdebug \
+    cherish_sakura-eng
