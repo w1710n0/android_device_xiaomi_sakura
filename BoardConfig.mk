@@ -31,5 +31,8 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 # Security Patch Level
 VENDOR_SECURITY_PATCH := 2018-06-05
 
+# Adreno
+BOARD_USES_ADRENO := true
+
 # Inherit the proprietary files
 include vendor/xiaomi/sakura/BoardConfigVendor.mk
