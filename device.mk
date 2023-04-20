@@ -31,8 +31,10 @@ PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUIGoogle \
-    NexusLauncherRelease
+    SystemUI \
+    DerpLauncherQuickStep
+
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := speed-profile
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/sakura/sakura-vendor.mk)
