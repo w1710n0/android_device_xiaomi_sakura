@@ -26,13 +26,9 @@ PRODUCT_BOARD_PLATFORM := msm8953
 # Reduce size of the system image
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 
-# Do not include art debug targets
-PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
-
-# Dex preopt
-PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUIGoogle \
-    NexusLauncherRelease
+# Java optimizations for SystemUI
+SYSTEM_OPTIMIZE_JAVA := true
+SYSTEMUI_OPTIMIZE_JAVA := true
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/sakura/sakura-vendor.mk)
