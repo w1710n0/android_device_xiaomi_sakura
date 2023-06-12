@@ -15,5 +15,17 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     fstab.qcom
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
+# Optimize everything for preopt
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
+PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
+
+# Dex preopt
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    SystemUI
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/sakura/sakura-vendor.mk)
