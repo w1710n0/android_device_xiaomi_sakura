@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_sakura.mk
+    $(LOCAL_DIR)/blaze_sakura.mk
